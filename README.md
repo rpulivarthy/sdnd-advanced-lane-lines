@@ -17,7 +17,6 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image0]: ./camera_cal/calibration1.jpg "distorted"
 [image1]: ./output_images/Undistorted.jpg "Undistorted"
 [image2]: ./output_images/test4_undist.jpg "Undistorted-Raw"
 [image3]: ./output_images/binary.jpg "Binary Example"
@@ -36,7 +35,7 @@ and calibration pictures. The images used for calibration are of different shape
 in the images. All the objects points compared with the image points and using cv2 functions i wass able to calculate the distortion parameters.
 The parameters are stored for use furthur in the pipeline
 
-![Undistort][image1]
+![alt text][image1]
 
 ## Apply a distortion correction to raw images
 Applying the undistortion to one of the test images
