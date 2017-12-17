@@ -61,6 +61,8 @@ Perspective transformation is needed to get the exact oreintation of the lane li
     dst = np.float32([corners[0]+offset,new_top_left+offset,new_top_right-offset ,corners[3]-offset])    
 ```
 ![alt text][image4]
+With Region of Interest
+
 ![alt text][image5]
 
 ## Detect Lanes
