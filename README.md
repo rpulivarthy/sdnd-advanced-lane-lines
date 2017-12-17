@@ -35,7 +35,7 @@ and calibration pictures. The images used for calibration are of different shape
 in the images. All the objects points compared with the image points and using cv2 functions i wass able to calculate the distortion parameters.
 The parameters are stored for use furthur in the pipeline
 
-![alt text](./camera_cal/calibration1.jpg) ![alt text][image1]
+![alt-text-1](./camera_cal/calibration1.jpg) ![alt-text-2][image1]
 
 ## Apply a distortion correction to raw images
 Applying the undistortion to one of the test images
