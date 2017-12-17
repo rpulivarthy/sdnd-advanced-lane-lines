@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output_images/Undistorted.jpg "Undistorted"
+[image1]: ./output_images/undistorted.jpg "Undistorted"
 [image2]: ./output_images/test4_undist.jpg "Undistorted-Raw"
 [image3]: ./output_images/binary.jpg "Binary Example"
 [image4]: ./output_images/binarty_warped.jpg "Warp Example"
