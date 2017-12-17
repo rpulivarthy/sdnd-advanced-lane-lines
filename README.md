@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [image1]: ./output_images/undistorted.jpg "Undistorted"
 [image2]: ./output_images/test4_undist.jpg "Undistorted-Raw"
 [image3]: ./output_images/binary.jpg "Binary Example"
-[image4]: ./output_images/binarty_warped.jpg "Warp Example"
+[image4]: ./output_images/binary_warped.jpg "Warp Example"
 [image5]: ./output_images/warp_binary_roi.jpg "Region of interest"
 [image6]: ./output_images/lanes.jpg "Lane Lines"
 [image7]: ./output_images/lane_detected.jpg "Projected lines"
@@ -35,7 +35,7 @@ and calibration pictures. The images used for calibration are of different shape
 in the images. All the objects points compared with the image points and using cv2 functions i wass able to calculate the distortion parameters.
 The parameters are stored for use furthur in the pipeline
 
-![alt text][./camera_cal/calibration1.jpg] ![alt text][image1]
+![alt text](./camera_cal/calibration1.jpg) ![alt text][image1]
 
 ## Apply a distortion correction to raw images
 Applying the undistortion to one of the test images
