@@ -35,17 +35,17 @@ and calibration pictures. The images used for calibration are of different shape
 in the images. All the objects points compared with the image points and using cv2 functions i wass able to calculate the distortion parameters.
 The parameters are stored for use furthur in the pipeline
 
-![alt text][image1]
+![alt text][./camera_cal/calibration1.jpg] ![alt text][image1]
 
 ## Apply a distortion correction to raw images
 Applying the undistortion to one of the test images
-![alt text] [image2]
+![alt text][image2]
 
 ## Creating a thresholded binary image
 For thersholding I have used the HLS space. I have sobel operator to identity the lines. Using the gray scale loses the color information.
 I have used a combination of thresholds x- gradient, saturation and luminosity to get the final binary threshold.
 The binary threshold and the image with color channels is below.
-![alt text] [image3]
+![alt text][image3]
 
 ## Perspective transformation
 Perspective transformation is needed to get the exact oreintation of the lane lines. The lane lines will give a impression the left and right lines merge; though that never happens. Perspective transform gives the bird view of the lines, which are useful to predict the lanes. Snippet from code.
