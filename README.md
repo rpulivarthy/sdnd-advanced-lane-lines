@@ -39,13 +39,13 @@ The parameters are stored for use furthur in the pipeline
 
 ## Apply a distortion correction to raw images
 Applying the undistortion to one of the test images
-![Undistorted] [image2]
+![alt text] [image2]
 
 ## Creating a thresholded binary image
 For thersholding I have used the HLS space. I have sobel operator to identity the lines. Using the gray scale loses the color information.
 I have used a combination of thresholds x- gradient, saturation and luminosity to get the final binary threshold.
 The binary threshold and the image with color channels is below.
-![Binary] [image3]
+![alt text] [image3]
 
 ## Perspective transformation
 Perspective transformation is needed to get the exact oreintation of the lane lines. The lane lines will give a impression the left and right lines merge; though that never happens. Perspective transform gives the bird view of the lines, which are useful to predict the lanes. Snippet from code.
@@ -60,8 +60,8 @@ Perspective transformation is needed to get the exact oreintation of the lane li
     src = np.float32([corners[0],corners[1],corners[2],corners[3]])
     dst = np.float32([corners[0]+offset,new_top_left+offset,new_top_right-offset ,corners[3]-offset])    
 ```
-![Warped Binary] [image4]
-![ROI] [image5]
+![alt text][image4]
+![alt text][image5]
 
 ## Detect Lanes
 I masked the images from perspective transform to region of interest to remove the unnecessary information and to plot the lanes better.
@@ -70,7 +70,7 @@ Keep moving the boundary upwards to the end of the image.
 
 Once one of the first frames is processed, I use the last known line location to restrict my search for new lane pixels.
 
-![Lane Lines] [image6]
+![alt text][image6]
 
 ## Extracting the local curvature of the road and vehicle localization
 
@@ -82,7 +82,7 @@ The distance from the center of the lane is computed in the `line.get_position_f
 ## Projecting the detected lane lines
 
 
-![Projected Lines] [image7]
+![alt text][image7]
 
 
 ---
